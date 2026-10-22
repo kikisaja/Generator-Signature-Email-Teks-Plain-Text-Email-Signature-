@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature Generator ✉️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">Saran No. 120</span>
+            <h1>✉️ EMAIL SIGNATURE</h1>
+            <p>Buat tanda tangan email profesional & rapi secara instan!</p>
+        </header>
+
+        <!-- Form Identitas -->
+        <form id="sig-form" class="sig-form">
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="input-name">Nama Lengkap</label>
+                    <input type="text" id="input-name" placeholder="Contoh: Rezkiany Marzuki" value="Rezkiany Marzuki" required>
+                </div>
+                <div class="input-group">
+                    <label for="input-title">Jabatan / Peran</label>
+                    <input type="text" id="input-title" placeholder="Contoh: Frontend Developer" value="Frontend Developer" required>
+                </div>
+            </div>
+
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="input-company">Perusahaan / Organisasi</label>
+                    <input type="text" id="input-company" placeholder="Contoh: Tech Corp" value="Tech Corp" required>
+                </div>
+                <div class="input-group">
+                    <label for="input-phone">Nomor Telepon / WhatsApp</label>
+                    <input type="text" id="input-phone" placeholder="Contoh: +62 812-3456-7890" value="+62 812-3456-7890" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="input-email">Alamat Email</label>
+                <input type="email" id="input-email" placeholder="Contoh: kiki@domain.com" value="kiki@domain.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="input-web">Situs Web / Portfolio</label>
+                <input type="text" id="input-web" placeholder="Contoh: https://portfolio.dev" value="https://portfolio.dev">
+            </div>
+        </form>
+
+        <!-- Preview & Output Section -->
+        <div class="output-section">
+            <div class="output-header">
+                <span>Pratinjau Tanda Tangan:</span>
+                <button type="button" id="copy-btn" class="btn-copy">📋 Salin Teks</button>
+            </div>
+            <pre id="signature-preview" class="signature-preview">--
+Rezkiany Marzuki
+Frontend Developer | Tech Corp
+Email: kiki@domain.com | Telp: +62 812-3456-7890
+Web: https://portfolio.dev</pre>
+        </div>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast hidden">Tanda tangan berhasil disalin! 🚀</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
